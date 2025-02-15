@@ -401,7 +401,7 @@
 		)
 	)
 	(gr_text "PULSE OUT"
-		(at 91.875 103.65 0)
+		(at 91.875 105.65 0)
 		(layer "F.SilkS")
 		(uuid "a7aa4eb6-c423-4e5f-8b9e-0ebe2aee34a3")
 		(effects
