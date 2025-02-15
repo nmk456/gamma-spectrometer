@@ -378,7 +378,7 @@
 		(layer "Edge.Cuts")
 		(uuid "e666990c-a90b-4996-9dc6-b6632cafda2a")
 	)
-	(gr_text "POWER ONLY\n5V/500mA"
+	(gr_text "POWER ONLY\n5V⎓500mA"
 		(at 110.9 107.15 0)
 		(layer "F.SilkS")
 		(uuid "3cfc701b-cfe6-4c7c-9fa9-7073854d3985")
