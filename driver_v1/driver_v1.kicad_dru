@@ -1,0 +1,363 @@
+(version 1)
+
+(rule "/OUT clearance"
+	(constraint clearance (min 1.75mm))
+	(condition "A.NetName == '/OUT'" ))
+
+(rule "/FILT clearance"
+	(constraint clearance (min 1.75mm))
+	(condition "A.NetName == '/FILT'" ))
+
+(rule "/FB_DIV1 clearance"
+	(constraint clearance (min 0.83mm))
+	(condition "A.NetName == '/FB_DIV1'" ))
+
+(rule "/FB_DIV2 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV2'" ))
+
+(rule "/DY1 clearance"
+	(constraint clearance (min 1.43mm))
+	(condition "A.NetName == '/DY1'" ))
+
+(rule "/DY2 clearance"
+	(constraint clearance (min 1.10mm))
+	(condition "A.NetName == '/DY2'" ))
+
+(rule "/DY3 clearance"
+	(constraint clearance (min 0.78mm))
+	(condition "A.NetName == '/DY3'" ))
+
+(rule "/DY4 clearance"
+	(constraint clearance (min 0.45mm))
+	(condition "A.NetName == '/DY4'" ))
+
+(rule "/DY5 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY5'" ))
+
+(rule "/DY6 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY6'" ))
+
+(rule "/DY7 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY7'" ))
+
+(rule "/DY8 clearance"
+	(constraint clearance (min 0.10mm))
+	(condition "A.NetName == '/DY8'" ))
+
+(rule "GND to /OUT clearance"
+	(constraint clearance (min 1.75mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/OUT'" ))
+
+(rule "GND to /FILT clearance"
+	(constraint clearance (min 1.75mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/FILT'" ))
+
+(rule "GND to /FB_DIV1 clearance"
+	(constraint clearance (min 0.83mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/FB_DIV1'" ))
+
+(rule "GND to /FB_DIV2 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/FB_DIV2'" ))
+
+(rule "GND to /DY1 clearance"
+	(constraint clearance (min 1.43mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY1'" ))
+
+(rule "GND to /DY2 clearance"
+	(constraint clearance (min 1.10mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY2'" ))
+
+(rule "GND to /DY3 clearance"
+	(constraint clearance (min 0.78mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY3'" ))
+
+(rule "GND to /DY4 clearance"
+	(constraint clearance (min 0.45mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY4'" ))
+
+(rule "GND to /DY5 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY5'" ))
+
+(rule "GND to /DY6 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY6'" ))
+
+(rule "GND to /DY7 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY7'" ))
+
+(rule "GND to /DY8 clearance"
+	(constraint clearance (min 0.10mm))
+	(condition "A.NetName == 'GND' && B.NetName == '/DY8'" ))
+
+(rule "/OUT to /FILT clearance"
+	(constraint clearance (min 0.05mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/FILT'" ))
+
+(rule "/OUT to /FB_DIV1 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/FB_DIV1'" ))
+
+(rule "/OUT to /FB_DIV2 clearance"
+	(constraint clearance (min 0.83mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/FB_DIV2'" ))
+
+(rule "/OUT to /DY1 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY1'" ))
+
+(rule "/OUT to /DY2 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY2'" ))
+
+(rule "/OUT to /DY3 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY3'" ))
+
+(rule "/OUT to /DY4 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY4'" ))
+
+(rule "/OUT to /DY5 clearance"
+	(constraint clearance (min 0.62mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY5'" ))
+
+(rule "/OUT to /DY6 clearance"
+	(constraint clearance (min 0.94mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY6'" ))
+
+(rule "/OUT to /DY7 clearance"
+	(constraint clearance (min 1.27mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY7'" ))
+
+(rule "/OUT to /DY8 clearance"
+	(constraint clearance (min 1.59mm))
+	(condition "A.NetName == '/OUT' && B.NetName == '/DY8'" ))
+
+(rule "/FILT to /FB_DIV1 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/FB_DIV1'" ))
+
+(rule "/FILT to /FB_DIV2 clearance"
+	(constraint clearance (min 0.83mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/FB_DIV2'" ))
+
+(rule "/FILT to /DY1 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY1'" ))
+
+(rule "/FILT to /DY2 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY2'" ))
+
+(rule "/FILT to /DY3 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY3'" ))
+
+(rule "/FILT to /DY4 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY4'" ))
+
+(rule "/FILT to /DY5 clearance"
+	(constraint clearance (min 0.62mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY5'" ))
+
+(rule "/FILT to /DY6 clearance"
+	(constraint clearance (min 0.94mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY6'" ))
+
+(rule "/FILT to /DY7 clearance"
+	(constraint clearance (min 1.27mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY7'" ))
+
+(rule "/FILT to /DY8 clearance"
+	(constraint clearance (min 1.59mm))
+	(condition "A.NetName == '/FILT' && B.NetName == '/DY8'" ))
+
+(rule "/FB_DIV1 to /FB_DIV2 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/FB_DIV2'" ))
+
+(rule "/FB_DIV1 to /DY1 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY1'" ))
+
+(rule "/FB_DIV1 to /DY2 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY2'" ))
+
+(rule "/FB_DIV1 to /DY3 clearance"
+	(constraint clearance (min 0.05mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY3'" ))
+
+(rule "/FB_DIV1 to /DY4 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY4'" ))
+
+(rule "/FB_DIV1 to /DY5 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY5'" ))
+
+(rule "/FB_DIV1 to /DY6 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY6'" ))
+
+(rule "/FB_DIV1 to /DY7 clearance"
+	(constraint clearance (min 0.35mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY7'" ))
+
+(rule "/FB_DIV1 to /DY8 clearance"
+	(constraint clearance (min 0.68mm))
+	(condition "A.NetName == '/FB_DIV1' && B.NetName == '/DY8'" ))
+
+(rule "/FB_DIV2 to /DY1 clearance"
+	(constraint clearance (min 0.51mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY1'" ))
+
+(rule "/FB_DIV2 to /DY2 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY2'" ))
+
+(rule "/FB_DIV2 to /DY3 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY3'" ))
+
+(rule "/FB_DIV2 to /DY4 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY4'" ))
+
+(rule "/FB_DIV2 to /DY5 clearance"
+	(constraint clearance (min 0.10mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY5'" ))
+
+(rule "/FB_DIV2 to /DY6 clearance"
+	(constraint clearance (min 0.10mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY6'" ))
+
+(rule "/FB_DIV2 to /DY7 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY7'" ))
+
+(rule "/FB_DIV2 to /DY8 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/FB_DIV2' && B.NetName == '/DY8'" ))
+
+(rule "/DY1 to /DY2 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY2'" ))
+
+(rule "/DY1 to /DY3 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY3'" ))
+
+(rule "/DY1 to /DY4 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY4'" ))
+
+(rule "/DY1 to /DY5 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY5'" ))
+
+(rule "/DY1 to /DY6 clearance"
+	(constraint clearance (min 0.62mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY6'" ))
+
+(rule "/DY1 to /DY7 clearance"
+	(constraint clearance (min 0.94mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY7'" ))
+
+(rule "/DY1 to /DY8 clearance"
+	(constraint clearance (min 1.27mm))
+	(condition "A.NetName == '/DY1' && B.NetName == '/DY8'" ))
+
+(rule "/DY2 to /DY3 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY3'" ))
+
+(rule "/DY2 to /DY4 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY4'" ))
+
+(rule "/DY2 to /DY5 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY5'" ))
+
+(rule "/DY2 to /DY6 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY6'" ))
+
+(rule "/DY2 to /DY7 clearance"
+	(constraint clearance (min 0.62mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY7'" ))
+
+(rule "/DY2 to /DY8 clearance"
+	(constraint clearance (min 0.94mm))
+	(condition "A.NetName == '/DY2' && B.NetName == '/DY8'" ))
+
+(rule "/DY3 to /DY4 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY3' && B.NetName == '/DY4'" ))
+
+(rule "/DY3 to /DY5 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY3' && B.NetName == '/DY5'" ))
+
+(rule "/DY3 to /DY6 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY3' && B.NetName == '/DY6'" ))
+
+(rule "/DY3 to /DY7 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/DY3' && B.NetName == '/DY7'" ))
+
+(rule "/DY3 to /DY8 clearance"
+	(constraint clearance (min 0.62mm))
+	(condition "A.NetName == '/DY3' && B.NetName == '/DY8'" ))
+
+(rule "/DY4 to /DY5 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY4' && B.NetName == '/DY5'" ))
+
+(rule "/DY4 to /DY6 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY4' && B.NetName == '/DY6'" ))
+
+(rule "/DY4 to /DY7 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY4' && B.NetName == '/DY7'" ))
+
+(rule "/DY4 to /DY8 clearance"
+	(constraint clearance (min 0.30mm))
+	(condition "A.NetName == '/DY4' && B.NetName == '/DY8'" ))
+
+(rule "/DY5 to /DY6 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY5' && B.NetName == '/DY6'" ))
+
+(rule "/DY5 to /DY7 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY5' && B.NetName == '/DY7'" ))
+
+(rule "/DY5 to /DY8 clearance"
+	(constraint clearance (min 0.25mm))
+	(condition "A.NetName == '/DY5' && B.NetName == '/DY8'" ))
+
+(rule "/DY6 to /DY7 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY6' && B.NetName == '/DY7'" ))
+
+(rule "/DY6 to /DY8 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY6' && B.NetName == '/DY8'" ))
+
+(rule "/DY7 to /DY8 clearance"
+	(constraint clearance (min 0.20mm))
+	(condition "A.NetName == '/DY7' && B.NetName == '/DY8'" ))
+
+
