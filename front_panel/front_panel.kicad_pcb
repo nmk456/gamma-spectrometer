@@ -390,7 +390,7 @@
 		)
 	)
 	(gr_text "HIGH\nVOLTAGE"
-		(at 71.895 96.95 0)
+		(at 79.895 96.95 0)
 		(layer "F.SilkS")
 		(uuid "576ccb2a-5a24-4bc8-b9f5-47d501a14854")
 		(effects
@@ -412,7 +412,7 @@
 		)
 	)
 	(gr_text "POWER"
-		(at 79.895 96.95 0)
+		(at 71.895 96.95 0)
 		(layer "F.SilkS")
 		(uuid "c3d655e1-b9d0-4742-9fda-fab106ab3fdd")
 		(effects
