@@ -126,14 +126,24 @@
 	)
 	(net 0 "")
 	(gr_line
-		(start 110.9 104.15)
-		(end 110.9 92.45)
+		(start 100 97.35)
+		(end 100 90.075)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "047c3757-3554-45e0-9fcf-966b6d14c091")
+		(uuid "42cad36d-802b-4472-85ff-1b8b8ec71823")
+	)
+	(gr_line
+		(start 100 104.45)
+		(end 100 109.925)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "631cc544-b0d2-44c2-8faa-b25df6f18101")
 	)
 	(gr_rect
 		(start 65.625 90.075)
@@ -147,8 +157,8 @@
 		(uuid "9d8ffea2-1259-4c42-a8a8-2c5bc69e437f")
 	)
 	(gr_rect
-		(start 104.375 92.45)
-		(end 117.425 104.15)
+		(start 83.8 97.85)
+		(end 116.2 103.95)
 		(locked yes)
 		(stroke
 			(width 0.1)
@@ -156,7 +166,7 @@
 		)
 		(fill none)
 		(layer "Dwgs.User")
-		(uuid "fa4c3ca6-25cc-4a43-935d-dc47546a9bd1")
+		(uuid "aa9d8fb5-1d63-4da4-ae61-c050ff1c036a")
 	)
 	(gr_arc
 		(start 134.375 108.925)
@@ -171,17 +181,6 @@
 		(uuid "022795d3-7cc8-47bd-afd7-9545e372a451")
 	)
 	(gr_line
-		(start 116.925 104.15)
-		(end 104.875 104.15)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "05e8d112-2541-4bd0-a39d-58f6aea9f4ad")
-	)
-	(gr_line
 		(start 66.625 90.075)
 		(end 133.375 90.075)
 		(locked yes)
@@ -191,18 +190,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "07231635-2167-4b83-9768-cae28e10932b")
-	)
-	(gr_circle
-		(center 79.895 101.95)
-		(end 81.645 101.95)
-		(locked yes)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "4008cadc-3ce0-43fa-94f6-3f26b77db054")
 	)
 	(gr_arc
 		(start 133.375 90.075)
@@ -215,18 +202,6 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "4a70bc54-38bf-434b-a684-e2e13fd0ad69")
-	)
-	(gr_circle
-		(center 71.895 101.95)
-		(end 73.645 101.95)
-		(locked yes)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "4c0c6414-8543-42f8-b45a-6e6f505ec05b")
 	)
 	(gr_arc
 		(start 65.625 91.075)
@@ -251,40 +226,16 @@
 		(layer "Edge.Cuts")
 		(uuid "4f08f818-dc63-444f-837f-398a2e6183dc")
 	)
-	(gr_line
-		(start 117.425 92.95)
-		(end 117.425 103.65)
-		(locked yes)
+	(gr_rect
+		(start 83.3 97.35)
+		(end 116.7 104.45)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
+		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "712a8787-9736-4df0-b3a3-917f8814cd7d")
-	)
-	(gr_arc
-		(start 117.425 103.65)
-		(mid 117.278553 104.003553)
-		(end 116.925 104.15)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "71424b89-680e-415b-9ef7-16fe858812cf")
-	)
-	(gr_arc
-		(start 116.925 92.45)
-		(mid 117.278553 92.596447)
-		(end 117.425 92.95)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "7ea1bfea-0ac4-4b44-8ded-e2c26d9b0af7")
+		(uuid "59724c29-8efd-41d9-8d9e-adeaef8c4c42")
 	)
 	(gr_line
 		(start 134.375 91.075)
@@ -297,40 +248,17 @@
 		(layer "Edge.Cuts")
 		(uuid "82eeec3f-cdfb-47c0-9364-16133ea7d325")
 	)
-	(gr_line
-		(start 104.875 92.45)
-		(end 116.925 92.45)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "8383a436-0285-4271-9b45-d563bf030bc8")
-	)
-	(gr_arc
-		(start 104.875 104.15)
-		(mid 104.521447 104.003553)
-		(end 104.375 103.65)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "88603290-6ddc-4d94-b745-ab277448fa01")
-	)
 	(gr_circle
-		(center 91.875 97.65)
-		(end 95.125 97.65)
+		(center 128.145 101.95)
+		(end 129.895 101.95)
 		(locked yes)
 		(stroke
-			(width 0.1)
+			(width 0.05)
 			(type default)
 		)
 		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "9308efbd-7724-4ff3-add1-1a4c3ba90b78")
+		(uuid "8705c6a9-fd8c-42d4-9cb5-1896a8552dae")
 	)
 	(gr_arc
 		(start 66.625 109.925)
@@ -345,17 +273,6 @@
 		(uuid "af03adf9-9da1-4192-a9eb-ced06cbacf44")
 	)
 	(gr_line
-		(start 104.375 103.65)
-		(end 104.375 92.95)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "df09f356-9cee-42fd-886f-b9a9b2b2ac35")
-	)
-	(gr_line
 		(start 65.625 108.925)
 		(end 65.625 91.075)
 		(locked yes)
@@ -366,55 +283,32 @@
 		(layer "Edge.Cuts")
 		(uuid "e0e1153d-b0fe-4f87-9b08-72b4afda881d")
 	)
-	(gr_arc
-		(start 104.375 92.95)
-		(mid 104.521447 92.596447)
-		(end 104.875 92.45)
-		(locked yes)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "e666990c-a90b-4996-9dc6-b6632cafda2a")
-	)
-	(gr_text "POWER ONLY\n5V⎓500mA"
-		(at 110.9 107.15 0)
+	(gr_text "Photomultiplier Tube"
+		(at 100 93.7125 0)
 		(layer "F.SilkS")
-		(uuid "3cfc701b-cfe6-4c7c-9fa9-7073854d3985")
+		(uuid "41dd9be7-d89e-4a76-8c44-15009ad52cdf")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 2 2)
+				(thickness 0.3)
+			)
+		)
+	)
+	(gr_text "DANGER: LETHAL VOLTAGE"
+		(at 100 107.1875 0)
+		(layer "F.SilkS")
+		(uuid "691c7886-579f-4619-a7cb-7b575bb16483")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.3)
 			)
 		)
 	)
 	(gr_text "HIGH\nVOLTAGE"
-		(at 79.895 96.95 0)
+		(at 128.145 96.95 0)
 		(layer "F.SilkS")
-		(uuid "576ccb2a-5a24-4bc8-b9f5-47d501a14854")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "PULSE OUT"
-		(at 91.875 103.65 0)
-		(layer "F.SilkS")
-		(uuid "a7aa4eb6-c423-4e5f-8b9e-0ebe2aee34a3")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "POWER"
-		(at 71.895 96.95 0)
-		(layer "F.SilkS")
-		(uuid "c3d655e1-b9d0-4742-9fda-fab106ab3fdd")
+		(uuid "70557973-9460-4030-adf7-37234784d294")
 		(effects
 			(font
 				(size 1 1)
@@ -467,39 +361,6 @@
 			(at 57.850001 100 90)
 			(layer "Dwgs.User")
 			(uuid "8e6e8820-22dd-42cf-94ec-33e83c30e6f2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.1)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0.5) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "d625df0c-6273-473b-9607-3dfa73769194")
-		(pts
-			(xy 79.895 101.95) (xy 71.895 101.95)
-		)
-		(height -4.05)
-		(gr_text "8.0000 mm"
-			(at 75.895 104.85 0)
-			(layer "Dwgs.User")
-			(uuid "d625df0c-6273-473b-9607-3dfa73769194")
 			(effects
 				(font
 					(size 1 1)
