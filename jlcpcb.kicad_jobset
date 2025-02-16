@@ -276,6 +276,41 @@
         "use_drill_origin": false
       },
       "type": "pcb_export_pdf"
+    },
+    {
+      "description": "",
+      "id": "55abe81d-f607-4c8f-accc-4105086374bd",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": true,
+        "export_silkscreen": true,
+        "export_soldermask": true,
+        "export_tracks": true,
+        "export_zones": true,
+        "fill_all_vias": true,
+        "format": "step",
+        "fuse_shapes": true,
+        "include_dnp": true,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "",
+        "overwrite": false,
+        "subst_models": true,
+        "use_drill_origin": false,
+        "use_grid_origin": false,
+        "user_origin.x": 100.0,
+        "user_origin.y": 100.0,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
     }
   ],
   "meta": {
@@ -304,6 +339,15 @@
         "output_path": "gerbers_jlcpcb.zip"
       },
       "type": "archive"
+    },
+    {
+      "description": "",
+      "id": "7defe583-fe80-4abe-84df-8c6b436e3e1f",
+      "only": [],
+      "settings": {
+        "output_path": "output"
+      },
+      "type": "folder"
     }
   ]
 }
