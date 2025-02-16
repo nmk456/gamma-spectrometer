@@ -323,7 +323,7 @@
       "only": [],
       "settings": {
         "format": "zip",
-        "output_path": "output.zip"
+        "output_path": "${PROJECTNAME}_outputs.zip"
       },
       "type": "archive"
     },
@@ -336,7 +336,7 @@
       ],
       "settings": {
         "format": "zip",
-        "output_path": "gerbers_jlcpcb.zip"
+        "output_path": "${PROJECTNAME}_gerbers_jlcpcb.zip"
       },
       "type": "archive"
     },

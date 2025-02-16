@@ -48,5 +48,4 @@ driver_v1/driver_v1_full.step
 front_panel/front_panel.step
 
 **/output/
-**/gerbers_jlcpcb.zip
-**/output.zip
+**/*.zip
