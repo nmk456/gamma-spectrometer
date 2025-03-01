@@ -25,6 +25,7 @@
         "hpgl_page_size": "default",
         "hpgl_pen_size": 1.016,
         "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
         "output_filename": "schematic.pdf",
         "page_size": "auto",
         "pdf_hierarchical_links": true,
@@ -318,34 +319,23 @@
   },
   "outputs": [
     {
-      "description": "",
-      "id": "09aae5f7-8a5c-4e43-b6a9-bcb037c886b3",
+      "description": "Output Folder",
+      "id": "7defe583-fe80-4abe-84df-8c6b436e3e1f",
       "only": [],
       "settings": {
-        "format": "zip",
-        "output_path": "${PROJECTNAME}_outputs.zip"
+        "output_path": "output"
       },
-      "type": "archive"
+      "type": "folder"
     },
     {
-      "description": "Gerbers",
-      "id": "e639d151-ec3e-419e-b2c2-d92521d853ec",
+      "description": "Gerbers Folder",
+      "id": "f25a40e4-2a23-4050-ad8c-e0c543e4d40e",
       "only": [
         "fa425e63-1b6f-4f4f-9f78-d8e2dad5d686",
         "df9e9e5d-a8c0-43db-bf6d-d1e39094a38d"
       ],
       "settings": {
-        "format": "zip",
-        "output_path": "${PROJECTNAME}_gerbers_jlcpcb.zip"
-      },
-      "type": "archive"
-    },
-    {
-      "description": "",
-      "id": "7defe583-fe80-4abe-84df-8c6b436e3e1f",
-      "only": [],
-      "settings": {
-        "output_path": "output"
+        "output_path": "./"
       },
       "type": "folder"
     }

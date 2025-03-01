@@ -1,0 +1,70 @@
+name: Generate output files
+
+on: [push]
+
+permissions:
+  contents: write
+
+env:
+  # Path to job from current repo
+  JOBSET_PATH: ../jlcpcb.kicad_jobset
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    container:
+      image: kicad/kicad:9.0
+
+    strategy:
+      matrix:
+        project: [driver_v1, front_panel, back_panel]
+
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v4
+
+      - run: kicad-cli -v
+
+      - name: Run Kicad
+        working-directory: ${{ matrix.project }}
+        run: kicad-cli jobset run --file ${{ env.JOBSET_PATH }} ./*.kicad_pro
+
+      - name: Display ERC/DRC reports
+        if: always()
+        working-directory: ${{ matrix.project }}
+        run: |
+          cat output/erc.report
+          cat output/drc.report
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: output
+          path: ${{ matrix.project }}/output
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Upload gerbers
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gerbers
+          path: ${{ matrix.project }}/gerbers
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Zip files
+        run: |
+          cd ${{ matrix.project }}/output/ && zip -r ../output.zip . * && cd ../..
+          cd ${{ matrix.project }}/gerbers/ && zip -r ../gerbers.zip . * && cd ../..
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            ${{ matrix.project }}/output.zip
+            ${{ matrix.project }}/gerbers.zip
+          draft: true
