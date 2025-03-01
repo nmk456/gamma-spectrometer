@@ -15,15 +15,15 @@ jobs:
 
     container:
       image: kicad/kicad:9.0
-      options: --workdir /work
+      options: --workdir /work --user root
 
     strategy:
       matrix:
         project: [driver_v1, front_panel, back_panel]
 
     steps:
-      - name: Fix permissions
-        run: sudo chown -R $(whoami) /work
+      # - name: Fix permissions
+      #   run: sudo chown -R $(whoami) /work
 
       - name: Checkout project
         uses: actions/checkout@v4
