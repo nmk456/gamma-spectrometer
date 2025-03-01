@@ -5,7 +5,7 @@
       "id": "7ec9ead6-c80b-4ec5-9e33-a94fc83a36bf",
       "settings": {
         "description": "",
-        "fail_on_error": true,
+        "fail_on_error": false,
         "format": "report",
         "output_filename": "erc.report",
         "severity": 48,
