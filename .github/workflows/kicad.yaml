@@ -22,9 +22,6 @@ jobs:
         project: [driver_v1, front_panel, back_panel]
 
     steps:
-      # - name: Fix permissions
-      #   run: sudo chown -R $(whoami) /work
-
       - name: Checkout project
         uses: actions/checkout@v4
 
@@ -45,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: output
+          name: ${{ matrix.project }}-output
           path: ${{ matrix.project }}/output
           retention-days: 14
           if-no-files-found: error
@@ -54,21 +51,21 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: gerbers
+          name: ${{ matrix.project }}-gerbers
           path: ${{ matrix.project }}/gerbers
           retention-days: 14
           if-no-files-found: error
 
-      - name: Zip files
-        run: |
-          cd ${{ matrix.project }}/output/ && zip -r ../output.zip . * && cd ../..
-          cd ${{ matrix.project }}/gerbers/ && zip -r ../gerbers.zip . * && cd ../..
+      # - name: Zip files
+      #   run: |
+      #     cd ${{ matrix.project }}/output/ && zip -r ../output.zip . * && cd ../..
+      #     cd ${{ matrix.project }}/gerbers/ && zip -r ../gerbers.zip . * && cd ../..
 
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: |
-            ${{ matrix.project }}/output.zip
-            ${{ matrix.project }}/gerbers.zip
-          draft: true
+      # - name: Release
+      #   uses: softprops/action-gh-release@v2
+      #   if: startsWith(github.ref, 'refs/tags/')
+      #   with:
+      #     files: |
+      #       ${{ matrix.project }}/output.zip
+      #       ${{ matrix.project }}/gerbers.zip
+      #     draft: true
