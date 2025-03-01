@@ -25,6 +25,9 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
 
+      - name: Fix symbol table
+        run: cp -r /home/kicad/.config/kicad/9.0 /root/.config/kicad/
+
       - run: kicad-cli -v
 
       - name: Run Kicad
