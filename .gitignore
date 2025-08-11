@@ -51,3 +51,9 @@ front_panel/front_panel.step
 **/gerbers/
 **/*.zip
 *.png
+
+venv/
+
+# LTSpice
+sim/tmp
+sim/*.raw
