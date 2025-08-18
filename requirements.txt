@@ -1,1 +1,3 @@
-PyLTSpice
+matplotlib==3.10.5
+numpy==2.3.2
+PyLTSpice==5.4.3
